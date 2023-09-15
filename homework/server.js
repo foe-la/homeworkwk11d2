@@ -19,7 +19,7 @@ app.get("/greeting", function (req, res) {
   app.get("/magic/:randomResponse", function (req, res) {
     console.log(randomResponse);
     let aRandomResponse = randomResponse[Math.floor(Math.random()*randomResponse.length)];
-    res.send("<h1> ${req.params.randomResponse} , ${aRandomResponse} </h1>
+    res.send("<h1> ${req.params.randomResponse} , ${aRandomResponse} </h1> "
     );
   });
 
